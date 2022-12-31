@@ -10,12 +10,12 @@ A load balancer pointing to Two EC2 instances with a simple web application that
 2. Create Two Subnets in separate Availability Zones
 3. Create Two Instances, one in each subnet created above
 4. Create an application load balancer for the two instances, with the following properties
-  1. healthy threshold: 3
-  2. unhealthy threshold: 3
-  3. interval: 10 seconds
+    1. healthy threshold: 3
+    2. unhealthy threshold: 3
+    3. interval: 10 seconds
 7.  Verify load balancer is working  (= you get reply from both instances at different times)
 8. Ensure the security group of the webservers allow HTTP traffic from the Load balancer only and nowhere else
 9. Upcoming upgrades
-  1. Create cloudwatch logs and store them in an S3 bucket
-  2. Create an autoscaling group to keep a minimum number of instances running at all times
-  3. More resources to be added
+    1. Create cloudwatch logs and store them in an S3 bucket
+    2. Create an autoscaling group to keep a minimum number of instances running at all times
+    3. More resources to be added
