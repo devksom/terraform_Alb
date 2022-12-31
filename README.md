@@ -15,3 +15,7 @@ A load balancer pointing to Two EC2 instances with a simple web application that
   3. interval: 10 seconds
 7.  Verify load balancer is working  (= you get reply from both instances at different times)
 8. Ensure the security group of the webservers allow HTTP traffic from the Load balancer only and nowhere else
+9. Upcoming upgrades
+ 1. Create cloudwatch logs and store them in an S3 bucket
+ 2. Create an autoscaling group to keep a minimum number of instances running at all times
+ 3. More resources to be added
