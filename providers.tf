@@ -10,5 +10,8 @@ provider "aws" {
   region                   = var.aws_region
   shared_config_files      = ["/Users/steps/.aws/config"]
   shared_credentials_files = ["/Users/steps/.aws/credentials"]
+ #for linux
+ #shared_config_files      = ["/Users/steps/.aws/config"]
+ #shared_credentials_files = ["/Users/steps/.aws/credentials"]
   profile                  = "myvscode"
 }
