@@ -8,7 +8,7 @@ terraform {
 }
 provider "aws" {
   region                   = var.aws_region
-  shared_config_files      = ["sers/steps/.aws/config"]
+  shared_config_files      = ["/Users/steps/.aws/config"]
   shared_credentials_files = ["/Users/steps/.aws/credentials"]
   profile                  = "myvscode"
 }
